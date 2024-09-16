@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Positivus</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            padding: 1rem 2rem;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        #logo {
+            height: 2rem;
+            width: 10rem;
+        }
+
+        .btn-outline-secondary {
+            font-family: Space Grotesk;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 28px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .navbar-nav {
+            margin-left: 40%;
+            margin-right: auto;
+            justify-content: space-around;
+        }
+
+        .navbar-nav .nav-item {
+            margin: 0 10px;
+        }
+
+        .custom-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .text-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .image-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        .hero-text {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-text h2 {
+            grid-row: span 3;
+        }
+
+        /* Responsive adjustments */
+        @media (min-width: 992px) {
+            .row {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+            }
+
+            .text-container {
+                grid-column: 1 / 2;
+            }
+
+            .image-container {
+                grid-column: 2 / 3;
+            }
+
+            .separate {
+                grid-column: 1 / 3;
+            }
+        }
+
+        @media (max-width: 991px) {
+
+            /* Small screens */
+            .separate {
+                order: 1;
+            }
+        }
+
+
+       
+
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px; /* Adjust spacing between logos as needed */
+    max-width: 1200px; /* Adjust as needed */
+    width: 100%;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+       
+/* css for servics */
+        .services {
+            display: flex;
+            align-items: center;
+        }
+
+        .services h3 {
+            background-color: greenyellow;
+            display: inline;
+            margin: 0;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+
+        .services p {
+            margin: 0;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img id="logo" src="./Logo.jpg" alt="logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Use Cases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Blog</a>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-secondary" type="button">Request a quote</button>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6 text-container">
+                <div class="hero-text">
+                    <h2>Navigating the digital landscape for success</h2>
+                </div>
+                <div class="separate">
+                    <p>Our digital marketing agency helps businesses grow and succeed online through a range of services
+                        including SEO, PPC, social media marketing, and content creation.</p>
+                    <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 image-container">
+                <img src="./main img.jpg" alt="Sample Image" class="custom-image">
+            </div>
+        </div>
+    </div>
+
+    
+        <div class="logo-grid" style="margin-bottom: 2%; margin-left: 2%; margin-top: 1%;">
+            <img src="./Vector.png" alt="Logo 1" class="logo">
+            <img src="./Vector.png" alt="Logo 2" class="logo">
+            <img src="./Vector.png" alt="Logo 3" class="logo">
+            <img src="./Vector.png" alt="Logo 4" class="logo">
+            <img src="./Vector.png" alt="Logo 5" class="logo">
+            <img src="./Vector.png" alt="Logo 6" class="logo">
+        </div>
+ 
+    
+
+   
+
+<!-- services -->
+<div class="row">
+    <div class="col-md-12 text-container">
+    <div class="services">
+        <h3 style="margin-left: 40px;">Services</h3>
+        <p>At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</p>
+    </div>
+    </div></div>
+
+
+<!-- on -->
+<div class="row">
+    <div class="col-md-12 text-container">
+    <div class="services">
+        <h5 style="margin-left: 40px; background-color: greenyellow; margin-top: 2%;">on working procss</h5>
+        <p>Step-by-Step Guide to Achieving Your Business Goals</p>
+    </div>
+    </div></div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pzjw8f+ua7Kw1TI1vYG3k7zJ2Gkt9h/oPDo1HBG1bC2FOqHmeR84Q+F5FLubHTI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
